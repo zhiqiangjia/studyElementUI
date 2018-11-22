@@ -1,0 +1,38 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title>hello ElementUI</title>
+            <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    </head>
+    <body>
+        <div id="app">
+            <el-button @click="visible=true">点我</el-button>
+            <el-dialog :visible.sync="visible" title="hello, ElementUI">
+                <p>
+                    Try Element
+                </p>
+
+            </el-dialog>
+        </div>
+
+        <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.min.js"></script>
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        <script>
+         var app = new Vue({
+                el: '#app',
+                data: function()
+                {
+                    return {
+                        visible: false
+                        }
+                },
+                methods:{
+
+                },
+                computed:{
+                    
+                }
+            });
+        </script>
+    </body>
+</html>

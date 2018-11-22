@@ -1,0 +1,38 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title>模板</title>
+            <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    </head>
+    <body>
+        <div id="app">
+            <template>
+                <el-table :data="tableData">
+                    <el-table-column></el-table-column>
+                </el-table>
+            </template>
+        </div>
+
+        <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.min.js"></script>
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        <script>
+         var app = new Vue({
+                el: '#app',
+                data: function()
+                {
+                    return {
+                        tableData:[
+                            
+                        ]
+                    }
+                },
+                methods:{
+
+                },
+                computed:{
+                    
+                }
+            });
+        </script>
+    </body>
+</html>
